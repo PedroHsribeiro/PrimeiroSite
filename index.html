@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Mania | Tudo que você precisa!</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\Administrador\Desktop\Curso de Programação Full-stack\Primeiro Site\css\index.css">
+    <link rel="stylesheet" type="text/css" href="css\index.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
             <div class="nome">GAME MANIA</div>
         </div>
         <nav class="menu">
-            <a class="menuDepartamentos" href="departamentos.html" width="187" height="151" >Departamentos</a>
+            <a class="menuDepartamentos" href="departamentos.html">Departamentos</a>
             <a class="menuPromocoes" href="promocoes.html">Promoções</a>
             <a class="menuNovidades" href="novidades.html">Novidades</a>
             <a class="menuMembros" href="membro.html">Torne-se Membro</a>
@@ -21,23 +21,21 @@
             <a class="menuCarrinho" href="carrinho.html">Meu Carrinho</a>
         </nav>
     </header>
-    <figure class="banner-home">
-        <img src="C:\Users\Administrador\Desktop\Curso de Programação Full-stack\Primeiro Site\img\nintendo.jpg" alt="banner da home" width="100%">
-    </figure>
-    <aside id="novidades-mania-background">
-    <h2>Novidades Mania</h2>
-    <p>Receba novidades e ofertas exclusivas em seu e-mail</p>
-    <label for="name">Nome</label>
-    <input type="text" id="name">
-    <label for="email">E-mail</label>
-    <input  type="email"  id="email"  name="email"  maxlength="40"  required autocomplete>
-    <input type="button" value="Cadastre-se">
-    </aside>
+    <div class="banner-home">
+        <img src="img\nintendo3.jpg" alt="banner da home">
+    </div>
+    <div id="novidades-mania-background">
+        <h2>Novidades Mania</h2>
+        <p>Receba novidades e ofertas exclusivas em seu e-mail</p>
+        <input placeholder="Nome" type="text" id="name">
+        <input placeholder="E-mail" type="email"  id="email"  name="email"  maxlength="40"  required autocomplete>
+        <input type="button" value="Cadastre-se">
+    </div>
     <figure class="categorias de produtos">
-        <img src="C:\Users\Administrador\Desktop\Curso de Programação Full-stack\Primeiro Site\img\controle_ps4.jpg" alt="Produtos de Consoles" width="460" height="1277">
-        <img src="C:\Users\Administrador\Desktop\Curso de Programação Full-stack\Primeiro Site\img\fan_processador.jpg" alt="Hardware para Computadores" width="962" height="603">
-        <img src="C:\Users\Administrador\Desktop\Curso de Programação Full-stack\Primeiro Site\img\mouse_teclado.jpg" alt="Periféricos" width="460" height="603">
-        <img src="C:\Users\Administrador\Desktop\Curso de Programação Full-stack\Primeiro Site\img\pc_gamer.jpg" alt="PC Gamer" width="460" height="603">
+        <img id="conole"src="img\controle_ps4.jpg" alt="Produtos de Consoles" width="460" height="1277">
+        <img id="hardware" src="img\fan_processador.jpg" alt="Hardware para Computadores" width="962" height="603">
+        <img id="perifericos" src="img\mouse_teclado.jpg" alt="Periféricos" width="460" height="603">
+        <img id="pc-gamer" src="img\pc_gamer.jpg" alt="PC Gamer" width="460" height="603">
     </figure>
     <footer class="footer" lang="pt-br">
         <div class="conteudo-footer">

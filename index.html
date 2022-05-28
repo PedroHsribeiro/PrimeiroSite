@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,65 +8,140 @@
     <title>Game Mania | Tudo que você precisa!</title>
     <link rel="stylesheet" type="text/css" href="css\index.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <div class="nome">GAME MANIA</div>
+            <div class="items-logo">
+                <div class="espaco">
+                    <input placeholder="Pesquisar" type="text" id="search">
+                </div>
+                <img class="logo-text" src="img/LOGO.png" alt="logo">
+                <div class="items-logo2">
+                    <a class="menuLogin" href="login.html">Login</a>
+                    <a class="menuCarrinho" href="carrinho.html">Meu Carrinho</a>
+                </div>
+            </div>
+
         </div>
-        <nav class="menu">
+        <div class="menu">
             <a class="menuDepartamentos" href="departamentos.html">Departamentos</a>
             <a class="menuPromocoes" href="promocoes.html">Promoções</a>
             <a class="menuNovidades" href="novidades.html">Novidades</a>
             <a class="menuMembros" href="membro.html">Torne-se Membro</a>
-            <a class="menuLogin" href="login.html">Login</a>
-            <a class="menuCarrinho" href="carrinho.html">Meu Carrinho</a>
-        </nav>
+        </div>
     </header>
-    <div class="banner-home">
-        <img src="img\nintendo3.jpg" alt="banner da home">
-    </div>
-    <div id="novidades-mania-background">
-        <h2>Novidades Mania</h2>
-        <p>Receba novidades e ofertas exclusivas em seu e-mail</p>
-        <input placeholder="Nome" type="text" id="name">
-        <input placeholder="E-mail" type="email"  id="email"  name="email"  maxlength="40"  required autocomplete>
-        <input type="button" value="Cadastre-se">
-    </div>
-    <figure class="categorias de produtos">
-        <img id="conole"src="img\controle_ps4.jpg" alt="Produtos de Consoles" width="460" height="1277">
-        <img id="hardware" src="img\fan_processador.jpg" alt="Hardware para Computadores" width="962" height="603">
-        <img id="perifericos" src="img\mouse_teclado.jpg" alt="Periféricos" width="460" height="603">
-        <img id="pc-gamer" src="img\pc_gamer.jpg" alt="PC Gamer" width="460" height="603">
-    </figure>
-    <footer class="footer" lang="pt-br">
-        <div class="conteudo-footer">
-            <nav class="4-colunas-footer">
-                <div class="coluna-footer">
-                    <div class="coluna-footer-itens">
-                        <label for="coluna-footer-itens">
-                            <h3>Intitucional</h3>
-                        </label>
-                        <ul class="coluna-footer-itens-lista" style="list-style-type: none;">
-                            <li>
-                                <a>Nossa História</a>
-                            </li>
-                            <li>
-                                <a>No que acreditamos</a>
-                            </li>
-                            <li>
-                                <a>Sustentabilidade</a>
-                            </li>
-                            <li>
-                                <a>Trabalhe conosco</a>
-                            </li>
-                            <li>
-                                <a>Privacidade</a>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="main">
+        <div class="banner-home">
+            <img src="img\nintendo3.jpg" alt="banner da home">
+        </div>
+        <div class="novidades-mania-background">
+            <div class="title-novidades">
+                <h2>NOVIDADES MANIA</h2>
+                <p>Receba novidades e ofertas exclusivas em seu e-mail</p>
+            </div>
+            <div class="form-novidades">
+                <input placeholder="NOME" type="text" id="name">
+                <input placeholder="E-MAIL" type="email" id="email" name="email" maxlength="40" required autocomplete>
+                <input type="button" class="button-novidades" value="CADASTRE-SE">
+            </div>
+        </div>
+        <div class="categorias-de-produtos">
+
+            <img id="console" src="img\controle_ps4.png" alt="Produtos de Consoles">
+            <div class="restante">
+                <img id="hardware" src="img\fan_processador.png" alt="Hardware para Computadores">
+                <div class="restante2">
+                    <img id="perifericos" src="img\mouse_teclado.png" alt="Periféricos">
+                    <img id="pc-gamer" src="img\pc_gamer.png" alt="PC Gamer">
                 </div>
-            </nav>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer" lang="pt-br">
+        <div class="items-footer">
+            <div class="coluna-footer-itens inst">
+                <label for="coluna-footer-itens">
+                    <h3>Intitucional</h3>
+                </label>
+                <ul class="coluna-footer-itens-lista" style="list-style-type: none;">
+                    <li>
+                        <a>Nossa História</a>
+                    </li>
+                    <li>
+                        <a>No que acreditamos</a>
+                    </li>
+                    <li>
+                        <a>Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a>Trabalhe conosco</a>
+                    </li>
+                    <li>
+                        <a>Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="coluna-footer-itens depart">
+                <label for="coluna-footer-itens">
+                    <h3>Departamentos</h3>
+                </label>
+                <ul class="coluna-footer-itens-lista" style="list-style-type: none;">
+                    <li>
+                        <a>Consoles</a>
+                    </li>
+                    <li>
+                        <a>Computadores</a>
+                    </li>
+                    <li>
+                        <a>Periféricos</a>
+                    </li>
+                    <li>
+                        <a>Hardware</a>
+                    </li>
+                    <li>
+                        <a>Jogos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="coluna-footer-itens accou">
+                <label for="coluna-footer-itens">
+                    <h3>Minha Conta</h3>
+                </label>
+                <ul class="coluna-footer-itens-lista" style="list-style-type: none;">
+                    <li>
+                        <a>Meus Pedidos</a>
+                    </li>
+                    <li>
+                        <a>Recebimento de Novidades</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="coluna-footer-itens atend">
+                <label for="coluna-footer-itens">
+                    <h3>Atendimento</h3>
+                </label>
+                <ul class="coluna-footer-itens-lista" style="list-style-type: none;">
+                    <li>
+                        <a>SAC</a>
+                    </li>
+                    <li>
+                        <a>Horário de Atendimento</a>
+                    </li>
+                    <li>
+                        <a>Endereço</a>
+                    </li>
+                    <li>
+                        <a>E-mail</a>
+                    </li>
+                    <li>
+                        <a>Entre em contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>

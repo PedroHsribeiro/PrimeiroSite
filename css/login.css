@@ -1,0 +1,73 @@
+.login-registration{
+    width: 1463px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+.login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;    
+}
+.login h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: #495057;
+}
+.login #login-email{    
+    width: 400px;
+    height: 40px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.login #login-password{    
+    width: 400px;
+    height: 40px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.login .button-account-login{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: #316ED4;
+    width: 410px;
+    height: 40px;
+}
+.partition{
+    width: 2px;
+    height: 450px;
+    margin: 0px 50px; 
+    background-color: #ccd2d8;
+}
+.account-creation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;    
+}
+.account-creation h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: #495057;
+}
+.account-creation input{    
+    width: 400px;
+    height: 40px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.account-creation .button-account-register{
+    font-weight: bold;
+    font-size: 20px;
+    color: #316ED4;
+    background: #ffffff;
+    border: 2px solid #316ED4;
+    width: 410px;
+    height: 40px;
+}

@@ -173,7 +173,7 @@ body{
     font-weight: bold;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.categorias-de-produtos{
+/*.categorias-de-produtos{
     display: flex;
     justify-content: space-between;
     width: 1463px;
@@ -191,7 +191,17 @@ body{
     display: flex;
     justify-content: space-between;
 }
+*/
 #console{
-    max-width: 460px;
-    max-height: 1277px;
+    max-width: 100%;
+    margin: 10px 0px;
+}
+#hardware{
+    margin: 10px 0px;
+}
+#perifericos{
+    margin: 10px 0px;
+}
+#pc-gamer{
+    margin: 10px 0px;
 }

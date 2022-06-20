@@ -117,7 +117,7 @@ body{
 }
 .novidades-mania-background{
     height: 100px;
-    width: 1463px;
+    max-width: 1463px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,10 +173,10 @@ body{
     font-weight: bold;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*.categorias-de-produtos{
+.categorias-de-produtos{
     display: flex;
     justify-content: space-between;
-    width: 1463px;
+    max-width: 1463px;
     margin: 10px auto;
 }
 .restante{
@@ -185,22 +185,41 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
 .restante2{
-    width: 962px;
+    width: 963px;
+    max-width: 963px;
     display: flex;
     justify-content: space-between;
 }
-*/
-#console{
-    margin: 10px 0px;
-}
-#hardware{
-    margin-bottom: 10px;
-}
-#perifericos{
-    margin-top: 61px;
-}
-#pc-gamer{
-    margin-top: 61px;
+
+@media screen and (max-width: 1024px){
+    .categorias-de-produtos{
+        max-width: 1024px;
+    }
+    .restante{
+       width: 100%;
+    }
+    .restante2{
+        max-width: 673px;
+    }
+    .banner-home{
+        max-width: 1015px;
+        max-height: 446px;
+    }
+    #console{
+        width: 322px;
+        height: 531px;
+    }
+    #hardware{
+        width: 673px;
+        height: 251px;
+    }
+    #perifericos{
+        width: 322px;
+        height: 251px;
+    }
+    #pc-gamer{
+        width: 322px;
+        height: 251px;
+    }
 }

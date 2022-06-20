@@ -37,7 +37,7 @@
     </header>
     <div class="main">
         <div class="banner-home">
-            <img src="img\nintendo3.jpg" alt="banner da home">
+            <img src="img\nintendo3.jpg" class="banner-home" alt="banner da home">
         </div>
         <div class="novidades-mania-background">
             <div class="title-novidades">
@@ -50,23 +50,18 @@
                 <input type="button" class="button-novidades" value="CADASTRE-SE">
             </div>
         </div>
-        <div class="container" style="max-width: 1463px;">
-            <div class="row align-items-center">
-                <div class="col-4" style="padding-left: 0px; padding-right: 24px;">
-                    <img id="console" src="img\controle_ps4.png" class="mx-auto d-block" alt="Produtos de Consoles">
+        <div class="categorias-de-produtos">
+            <source media="(max-width:1024px)" srcset="img\controle_ps4_1024px">
+            <img id="console" src="img\controle_ps4.png" alt="Produtos de Consoles">
+            <div class="restante">
+                <source media="(max-width:1024px)" srcset="img\fan_processador_1024px">
+                <img id="hardware" src="img\fan_processador.png" alt="Hardware para Computadores">
+                <div class="restante2">
+                    <source media="(max-width:1024px)" srcset="img\mouse_teclado_1024px">
+                    <img id="perifericos" src="img\mouse_teclado.png" alt="Periféricos">
+                    <img id="pc-gamer" src="img\pc_gamer.png" alt="PC Gamer">
                 </div>
-                <div class="col-8 ">
-                    <img id="hardware" src="img\fan_processador.png" class="mx-auto d-block float-start" alt="Hardware para Computadores">
-                    <div class="row">
-                        <div class="col-6">
-                            <img id="perifericos" src="img\mouse_teclado.png" alt="Periféricos">
-                        </div>
-                        <div class="col-6" style="padding-left: 24px; padding-right: 0px;">
-                            <img id="pc-gamer" src="img\pc_gamer.png" class="float-end" alt="PC Gamer">
-                        </div>
-                    </div>
-                </div>     
-            </div>      
+            </div>
         </div>
     </div>
     <footer class="footer" lang="pt-br">

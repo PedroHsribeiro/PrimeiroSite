@@ -40,6 +40,12 @@
     font-size: 24px;
     color: white;
 }
+.menuDepartamentos2{
+    text-decoration: none;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: white;
+}
 
 .espaco{
     width: 469px;
@@ -47,6 +53,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.search{
+    width: 40px;
+    height: 40px;
 }
 .espaco input{
     width: 300px;
@@ -77,6 +87,7 @@ body{
 }
 .footer{
     background-color: #103A8F;
+    width: 100%;
 }
 .footer .coluna-footer-itens-lista{
     list-style: none;
@@ -99,11 +110,13 @@ body{
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .items-footer{
-    width: 1463px;
+    max-width: 1463px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
+    padding: 0px 34px;
 }
 .banner-home{
     max-width: 100%;
@@ -125,7 +138,7 @@ body{
     background-color: #103A8F;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 .title-novidades{
     display: flex;
@@ -192,7 +205,86 @@ body{
     justify-content: space-between;
 }
 
+@media screen and (min-width: 1025px){
+    .logo-icon{
+        display: none;
+    }
+    .menuDepartamentos2{
+        display: none;
+    }
+    #perifericos2{
+        display: none;
+    }
+    #pc-gamer2{
+        display: none;
+    }
+    #hardware2{
+        display: none;
+    }
+    #console2{
+        display: none;
+    }
+    
+}
 @media screen and (max-width: 1024px){
+    .logo{
+        height: 50px;
+    }
+    .items-logo2 a{
+        font-size: 16px;
+    }
+    .espaco{
+        width: 250px;
+    }
+    .espaco #search{
+        height: 29px;
+        width: 190px;
+        font-size: 16px;
+    }
+    .search{
+        width: 29px;
+        height: 29px;
+    }
+    .menu{
+        display: none;
+    }
+    .logo-text{
+        display: none;
+    }
+    .banner-home{
+        width: 100%;
+    }
+    .novidades-mania-background{
+        height: 57px;
+    }
+    .title-novidades h2{
+        font-size: 16px;
+    }
+    .title-novidades p{
+        display: none;
+    }
+    .form-novidades{
+        width: 100%;
+        max-width: 580px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .form-novidades #name{
+        width: 213px;
+        height: 27px;
+        font-size: 16px;
+    }
+    .form-novidades #email{
+        width: 213px;
+        height: 27px;
+        font-size: 16px;
+    }
+    .form-novidades .button-novidades{
+        width: 134px;
+        height: 27px;
+        font-size: 16px;
+    }
     .categorias-de-produtos{
         max-width: 1024px;
     }
@@ -202,23 +294,16 @@ body{
     .restante2{
         max-width: 673px;
     }
-    .banner-home{
-        max-width: 1015px;
-        max-height: 446px;
-    }
-    #console{
-        
-    }
-    #hardware{
-        width: 673px;
-        height: 251px;
-    }
     #perifericos{
-        width: 322px;
-        height: 251px;
+        display: none;
     }
     #pc-gamer{
-        width: 322px;
-        height: 251px;
+        display: none;
+    }
+    #hardware{
+        display: none;
+    }
+    #console{
+        display: none;
     }
 }

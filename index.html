@@ -17,16 +17,21 @@
         <div class="logo">
             <div class="items-logo">
                 <div class="espaco">
-                    <input placeholder="Pesquisar" type="text" id="search">
+                    <div class="search-box">
+                        <input placeholder="Pesquisar" type="text" id="search">
+                    </div>
                     <img class="search" src="img/search_img.png" alt="Search icon">
                 </div>
                 <a class="menuDepartamentos2" href="departamentos.html">Departamentos</a>
-                <a href="index.html">
-                    <img class="logo-text" src="img/LOGO.png" alt="logo">
-                </a>
-                <a href="index.html">
-                    <img class="logo-icon" src="img/logo_icon.png" alt="logo">
-                </a>
+                <img class="logo-text" href="index.html" src="img/LOGO.png" alt="logo">
+                <div class="icon-logo">
+                    <a href="index.html">
+                        <img class="logo-icon" src="img/logo_icon.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu-icon">
+                    <img src="img/menu_img.png" alt="Agrupamento dos itens do menu">
+                </div>
                 <div class="items-logo2">
                     <a class="menuLogin" href="login.html">Login</a>
                     <a class="menuCarrinho" href="carrinho.html">Meu Carrinho</a>
@@ -43,30 +48,42 @@
     </header>
     <div class="main">
         <div class="banner-home">
-            <img src="img\nintendo3.jpg" class="banner-home" alt="banner da home">
+            <img src="img\nintendo3.jpg" class="banner-home" alt="banner da home" width="100%">
         </div>
         <div class="novidades-mania-background">
             <div class="title-novidades">
-                <h2>NOVIDADES MANIA</h2>
+                <h2>Novidades Mania</h2>
                 <p>Receba novidades e ofertas exclusivas em seu e-mail</p>
             </div>
             <div class="form-novidades">
-                <input placeholder="NOME" type="text" id="name">
-                <input placeholder="E-MAIL" type="email" id="email" name="email" maxlength="40" required autocomplete>
-                <input type="button" class="button-novidades" value="CADASTRE-SE">
+                <div class="form-novidades-name">
+                    <input placeholder="Nome" type="text" id="name">
+                </div>
+                <div class="form-novidades-email">
+                    <input placeholder="E-mail" type="email" id="email" name="email" maxlength="40" required autocomplete>
+                </div>
+                <div class="form-novidades-button">
+                    <input type="button" class="button-novidades" value="Cadastre-se">
+                </div>
             </div>
         </div>
         <div class="categorias-de-produtos">
-            <img id="console" src="img\controle_ps4.png" alt="Produtos de Consoles">
-            <img id="console2" src="img/controle_ps4_1024px.png" alt="Produtos de Consoles">
+            <div class="console">
+                <img id="console" src="img\controle_ps4.png" alt="Produtos de Consoles" width="100%" height="100%">
+                <img id="console2" src="img/controle_ps4_1024px.png" alt="Produtos de Consoles" width="100%">
+            </div>
             <div class="restante">
-                <img id="hardware" src="img\fan_processador.png" alt="Hardware para Computadores">
-                <img id="hardware2" src="img/fan_processador_1024px.png" alt="Hardware para Computadores">
+                <img id="hardware" src="img\fan_processador.png" alt="Hardware para Computadores" width="100%">
+                <img id="hardware2" src="img/fan_processador_1024px.png" alt="Hardware para Computadores" width="100%">
                 <div class="restante2">
-                    <img id="perifericos" src="img\mouse_teclado.png" alt="Periféricos">
-                    <img id="pc-gamer" src="img\pc_gamer.png" alt="PC Gamer">
-                    <img id="perifericos2" src="img/mouse_teclado_1024px.png" alt="Periféricos">
-                    <img id="pc-gamer2" src="img/pc-gamer_1024px.png" alt="PC Gamer">
+                    <div class="perifericos">
+                        <img id="perifericos" src="img\mouse_teclado.png" alt="Periféricos" width="100%">
+                        <img id="perifericos2" src="img/mouse_teclado_1024px.png" alt="Periféricos" width="100%">
+                    </div>
+                    <div class="pc-gamer">
+                        <img id="pc-gamer" src="img\pc_gamer.png" alt="PC Gamer" width="100%">
+                        <img id="pc-gamer2" src="img/pc-gamer_1024px.png" alt="PC Gamer" width="100%">
+                    </div>
                 </div>
             </div>
         </div>

@@ -407,8 +407,28 @@ body{
         flex-direction: column;
         border-bottom: #ffffff;
     }
-    .coluna-footer-itens{
-        border-bottom: #ffffff;
+    .items-footer h3{
+        font-size: 16px; 
+    }
+    .footer .inst{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    .footer .depart{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    .footer .accou{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
+    }
+    .footer .atend{
+        border-bottom: solid 1px white;
+        display: flex;
+        width: 100%;
     }
     .coluna-footer-itens-lista li{
         display: none;

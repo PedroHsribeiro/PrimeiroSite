@@ -409,11 +409,13 @@ body{
     }
     .items-footer h3{
         font-size: 16px; 
+        margin: 5px;
     }
     .footer .inst{
-        border-bottom: solid 1px white;
-        display: flex;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 1px white;
     }
     .footer .depart{
         border-bottom: solid 1px white;

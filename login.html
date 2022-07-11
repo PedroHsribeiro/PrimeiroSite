@@ -9,6 +9,7 @@
     <title>Game Mania | Tudo que você precisa!</title>
     <link rel="stylesheet" type="text/css" href="css\index.css">
     <link rel="stylesheet" type="text/css" href="css\login.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -17,24 +18,39 @@
         <div class="logo">
             <div class="items-logo">
                 <div class="espaco">
-                    <input placeholder="Pesquisar" type="text" id="search">
-                    <img class="search" src="img/search_img.png" alt="Search icon">
+                    <div class="search-box" id="search-box">
+                        <input placeholder="Pesquisar" type="text" id="search">
+                    </div>
+                    <a id="search-icon" onclick="mostrarPesquisa()">
+                        <img class="search" src="img/search_img.png" alt="Search icon">
+                    </a>
                 </div>
-                <a href="index.html">
-                    <img class="logo-text" src="img/LOGO.png" alt="logo">
-                </a>
-                <div class="items-logo2">
+                <img class="logo-text" href="index.html" src="img/LOGO.png" alt="logo">
+                <div class="icon-logo">
+                    <a href="index.html">
+                        <img class="logo-icon" src="img/logo_icon.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu-icon">
+                    <a id="menu-icon" onclick="mostrarMenu()">
+                        <img src="img/menu_img.png" alt="Agrupamento dos itens do menu">
+                    </a>
+                        
+                </div>
+                <div class="items-logo2" id="items-logo2">
                     <a class="menuLogin" href="login.html">Login</a>
                     <a class="menuCarrinho" href="carrinho.html">Meu Carrinho</a>
                 </div>
             </div>
-
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
+            <a class="menuLogin2" href="login.html">Login</a>
+            <a class="menuCarrinho2" href="carrinho.html">Meu Carrinho</a> 
             <a class="menuDepartamentos" href="departamentos.html">Departamentos</a>
             <a class="menuPromocoes" href="promocoes.html">Promoções</a>
             <a class="menuNovidades" href="novidades.html">Novidades</a>
             <a class="menuMembros" href="membro.html">Torne-se Membro</a>
+           
         </div>
     </header>
     <div class="main">
@@ -58,13 +74,19 @@
         </div>
         <div class="novidades-mania-background">
             <div class="title-novidades">
-                <h2>NOVIDADES MANIA</h2>
+                <h2>Novidades Mania</h2>
                 <p>Receba novidades e ofertas exclusivas em seu e-mail</p>
             </div>
             <div class="form-novidades">
-                <input placeholder="NOME" type="text" id="name">
-                <input placeholder="E-MAIL" type="email" id="email" name="email" maxlength="40" required autocomplete>
-                <input type="button" class="button-novidades" value="CADASTRE-SE">
+                <div class="form-novidades-name">
+                    <input placeholder="Nome" type="text" id="name">
+                </div>
+                <div class="form-novidades-email">
+                    <input placeholder="E-mail" type="email" id="email" name="email" maxlength="40" required autocomplete>
+                </div>
+                <div class="form-novidades-button">
+                    <input type="button" class="button-novidades" value="Cadastre-se">
+                </div>
             </div>
         </div>
     </div>

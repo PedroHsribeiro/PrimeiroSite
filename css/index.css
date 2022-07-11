@@ -99,6 +99,7 @@
 body{
     background-color: white;
     width: 100%;
+    min-width: 320px;
 }
 .banner-home{
     max-width: 1463px;
@@ -423,9 +424,6 @@ body{
     }
     .espaco{
         width: 29px;
-    }
-    .espaco #search{
-        display: none;
     }
     .espaco .search{
         height: 30px;

@@ -4,7 +4,15 @@ $("#menu-icon").click(function(){
     $("#menu").stop().slideToggle();
 
 })
-
+$(window).resize(function(){
+    if($(window).width() > 830){
+        $("#menu").css('display', 'flex');
+        $("#inst2").css('flex-direction', 'column');
+        $("#depart2").css('flex-direction', 'column');
+        $("#accou2").css('flex-direction', 'column');
+        $("#atend2").css('flex-direction', 'column');
+    }
+})
 })
 
 

@@ -1,12 +1,13 @@
-function mostrarMenu(){ //Este código é utilizado para apresentar os itens do menu em displays menores que 1024px
-    let menu = document.getElementById("menu")
+$(document).ready(function() {
+$("#menu-icon").click(function(){
 
-    if (getComputedStyle(menu).display == "none"){
-        menu.style.display = "flex"
-    } else{
-        menu.style.display = "none"
-    }
-}
+    $("#menu").stop().slideToggle();
+
+})
+
+})
+
+
 function mostrarPesquisa(){ //Este código é utilizado para apresentar a barra de pesquisa em displays menores que 1024px
     let pesquisa = document.getElementById("search-box")
 
@@ -16,10 +17,11 @@ function mostrarPesquisa(){ //Este código é utilizado para apresentar a barra 
         pesquisa.style.display = "none"
     }
 }
+
 function mostrarFooter(){ //Este código é utilizado para apresentar os itens do menu em displays menores que 1024px
     let footerItems = document.getElementById("inst2")
     let tamanhoTela = window.innerWidth;
-    if(tamanhoTela < 830){
+    if(tamanhoTela <= 830){
         if (getComputedStyle(footerItems).display == "none"){
             footerItems.style.display = "flex"
         } else{
@@ -27,10 +29,11 @@ function mostrarFooter(){ //Este código é utilizado para apresentar os itens d
         }
     }
 }
+
 function mostrarFooter1(){ //Este código é utilizado para apresentar os itens do menu em displays menores que 1024px
     let footerItems = document.getElementById("depart2")
     let tamanhoTela = window.innerWidth;
-    if(tamanhoTela < 830){
+    if(tamanhoTela <= 830){
         if (getComputedStyle(footerItems).display == "none"){
             footerItems.style.display = "flex"
         } else{
@@ -41,7 +44,7 @@ function mostrarFooter1(){ //Este código é utilizado para apresentar os itens 
 function mostrarFooter2(){ //Este código é utilizado para apresentar os itens do menu em displays menores que 1024px
     let footerItems = document.getElementById("accou2")
     let tamanhoTela = window.innerWidth;
-    if(tamanhoTela < 830){
+    if(tamanhoTela <= 830){
         if (getComputedStyle(footerItems).display == "none"){
             footerItems.style.display = "flex"
         } else{
@@ -52,7 +55,7 @@ function mostrarFooter2(){ //Este código é utilizado para apresentar os itens 
 function mostrarFooter3(){ //Este código é utilizado para apresentar os itens do menu em displays menores que 1024px
     let footerItems = document.getElementById("atend2")
     let tamanhoTela = window.innerWidth;
-    if(tamanhoTela < 830){
+    if(tamanhoTela <= 830){
         if (getComputedStyle(footerItems).display == "none"){
             footerItems.style.display = "flex"
         } else{

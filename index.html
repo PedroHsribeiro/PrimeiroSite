@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Game Mania | Tudo que você precisa!</title>
     <link rel="stylesheet" type="text/css" href="css\index.css">
+    <script src="js/jquery.js" defer></script>
     <script src="js/scripts.js" defer></script>
+
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -30,7 +32,7 @@
                     </a>
                 </div>
                 <div class="menu-icon">
-                    <a id="menu-icon" onclick="mostrarMenu()">
+                    <a id="menu-icon">
                         <img src="img/menu_img.png" alt="Agrupamento dos itens do menu">
                     </a>
                         
@@ -41,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="menu" id="menu">
+        <div id="menu">
             <a class="menuLogin2" href="login.html">Login</a>
             <a class="menuCarrinho2" href="carrinho.html">Meu Carrinho</a> 
             <a class="menuDepartamentos" href="departamentos.html">Departamentos</a>
@@ -103,9 +105,9 @@
         <div class="items-footer" style="padding-top: 25px;">
             <div class="coluna-footer-itens inst" id="inst">
                 <label for="coluna-footer-itens">
-                    <h3 id="inst3" onclick="mostrarFooter()">Institucional</h3> 
+                    <h3 onclick="mostrarFooter()">Institucional</h3>  
                 </label>
-                <ul class="coluna-footer-itens-lista" id="inst2" style="list-style-type: none;">
+                <ul class="coluna-footer-itens-lista" id="inst2">
                     <li>
                         <a>Nossa História</a>
                     </li>
@@ -127,7 +129,7 @@
                 <label for="coluna-footer-itens">
                     <h3 onclick="mostrarFooter1()">Departamentos</h3>
                 </label>
-                <ul class="coluna-footer-itens-lista" id="depart2" style="list-style-type: none;">
+                <ul class="coluna-footer-itens-lista" id="depart2">
                     <li>
                         <a>Consoles</a>
                     </li>
@@ -147,9 +149,9 @@
             </div>
             <div class="coluna-footer-itens accou" id="accou">
                 <label for="coluna-footer-itens">
-                    <h3 onclick="mostrarFooter2()">Minha Conta</h3>
+                    <h3 id="inst3" onclick="mostrarFooter2()">Minha Conta</h3>
                 </label>
-                <ul class="coluna-footer-itens-lista" id="accou2" style="list-style-type: none;">
+                <ul class="coluna-footer-itens-lista" id="accou2">
                     <li>
                         <a>Meus Pedidos</a>
                     </li>
@@ -162,7 +164,7 @@
                 <label for="coluna-footer-itens">
                     <h3 onclick="mostrarFooter3()">Atendimento</h3>
                 </label>
-                <ul class="coluna-footer-itens-lista" id="atend2" style="list-style-type: none;">
+                <ul class="coluna-footer-itens-lista" id="atend2">
                     <li>
                         <a>SAC</a>
                     </li>

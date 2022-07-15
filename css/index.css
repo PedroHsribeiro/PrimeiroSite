@@ -75,7 +75,7 @@
 .menu-icon{
     display: none;
 }
-.menu{
+#menu{
     background-color: #316ED4;
     height: 73px;
     display: flex;
@@ -90,7 +90,7 @@
 .menuCarrinho2{
     display: none;
 }
-.menu a{
+#menu a{
     text-decoration: none;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
@@ -263,6 +263,7 @@ body{
     margin: 0 auto;
     padding: 0px 34px;
 }
+
 @media screen and (max-width: 1024px){
     .logo{
         height: 50px;
@@ -306,10 +307,10 @@ body{
     .menu-icon{
         display: flex;
     }
-    .menu{
+    #menu{
         max-width: 250px;
         width: 100%;
-        max-height: 250px;
+        max-height: 200px;
         height: 100%;
 
         background-color: #103A8F;
@@ -318,17 +319,18 @@ body{
         position: absolute;
         top: 50px;
         right: 0px;
+        text-align: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
-    .menu .menuLogin2{
-        display: flex;
+    #menu .menuLogin2{
+        display: block;
     }
-    .menu .menuCarrinho2{
-        display: flex;
+    #menu .menuCarrinho2{
+        display: block;
     }
     .logo-text{
         display: none;
@@ -434,35 +436,33 @@ body{
         display: flex;
     }
     .items-footer{
-        padding: 10px;
-    }
-    .items-footer{
         display: flex;
         flex-direction: column;
         border-bottom: #ffffff;
+        padding: 10px;
     }
     .items-footer h3{
         font-size: 16px; 
         margin: 5px;
         font-weight: 600;
     }
-    .footer .inst{
+    .footer #inst{
         width: 100%;
         display: flex;
         justify-content: center;
         border-bottom: solid 1px white;
     }
-    .footer .depart{
+    .footer #depart{
         border-bottom: solid 1px white;
         display: flex;
         width: 100%;
     }
-    .footer .accou{
+    .footer #accou{
         border-bottom: solid 1px white;
         display: flex;
         width: 100%;
     }
-    .footer .atend{
+    .footer #atend{
         border-bottom: solid 1px white;
         display: flex;
         width: 100%;

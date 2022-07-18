@@ -12,7 +12,7 @@
     <script src="js/scripts.js" defer></script>
 
 </head>
-<body>
+<body onresize="mostrarItens()">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <header>
         <div class="logo">
@@ -21,18 +21,18 @@
                     <div class="search-box" id="search-box">
                         <input placeholder="Pesquisar" type="text" id="search">
                     </div>
-                    <a id="search-icon">
+                    <a id="search-icon" onclick="mostrarPesquisa()">
                         <img class="search" src="img/search_img.png" alt="Search icon">
                     </a>
                 </div>
                 <img class="logo-text" src="img/LOGO.png" alt="logo">
-                <div class="icon-logo">
+                <div class="icon-logo" id="icon-logo">
                     <a href="index.html">
                         <img class="logo-icon" src="img/logo_icon.png" alt="logo">
                     </a>
                 </div>
                 <div class="menu-icon">
-                    <a id="menu-icon">
+                    <a id="menu-icon" onclick="mostrarMenu()">
                         <img src="img/menu_img.png" alt="Agrupamento dos itens do menu">
                     </a>
                         
@@ -105,7 +105,7 @@
         <div class="items-footer" style="padding-top: 25px;">
             <div class="coluna-footer-itens inst" id="inst">
                 <label for="coluna-footer-itens">
-                    <h3 onclick="mostrarFooter()">Institucional</h3>  
+                    <h3>Institucional</h3>  
                 </label>
                 <ul class="coluna-footer-itens-lista" id="inst2">
                     <li>
@@ -127,7 +127,7 @@
             </div>
             <div class="coluna-footer-itens depart" id="depart">
                 <label for="coluna-footer-itens">
-                    <h3 onclick="mostrarFooter1()">Departamentos</h3>
+                    <h3>Departamentos</h3>
                 </label>
                 <ul class="coluna-footer-itens-lista" id="depart2">
                     <li>
@@ -149,7 +149,7 @@
             </div>
             <div class="coluna-footer-itens accou" id="accou">
                 <label for="coluna-footer-itens">
-                    <h3 id="inst3" onclick="mostrarFooter2()">Minha Conta</h3>
+                    <h3>Minha Conta</h3>
                 </label>
                 <ul class="coluna-footer-itens-lista" id="accou2">
                     <li>
@@ -162,7 +162,7 @@
             </div>
             <div class="coluna-footer-itens atend" id="atend">
                 <label for="coluna-footer-itens">
-                    <h3 onclick="mostrarFooter3()">Atendimento</h3>
+                    <h3>Atendimento</h3>
                 </label>
                 <ul class="coluna-footer-itens-lista" id="atend2">
                     <li>

@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Game Mania | Tudo que você precisa!</title>
     <link rel="stylesheet" type="text/css" href="css\index.css">
     <script src="js/jquery.js" defer></script>
     <script src="js/scripts.js" defer></script>
 
 </head>
+
 <body onresize="mostrarItens()">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <header>
         <div class="logo">
             <div class="items-logo">
@@ -35,7 +39,7 @@
                     <a id="menu-icon" onclick="mostrarMenu()">
                         <img src="img/menu_img.png" alt="Agrupamento dos itens do menu">
                     </a>
-                        
+
                 </div>
                 <div class="items-logo2" id="items-logo2">
                     <a class="menuLogin" href="login.html">Login</a>
@@ -45,17 +49,33 @@
         </div>
         <div id="menu">
             <a class="menuLogin2" href="login.html">Login</a>
-            <a class="menuCarrinho2" href="carrinho.html">Meu Carrinho</a> 
+            <a class="menuCarrinho2" href="carrinho.html">Meu Carrinho</a>
             <a class="menuDepartamentos" href="departamentos.html">Departamentos</a>
             <a class="menuPromocoes" href="promocoes.html">Promoções</a>
             <a class="menuNovidades" href="novidades.html">Novidades</a>
             <a class="menuMembros" href="membro.html">Torne-se Membro</a>
-           
+
         </div>
     </header>
     <div class="main">
-        <div class="banner-home">
-            <img src="img\nintendo3.jpg" class="banner-home" alt="banner da home" width="100%">
+        <div class="carrosel">
+            <div data-js="banner-home" class="banner-home nintendo-controle bannerVisibility">
+                <img src="img\nintendo3.jpg" alt="Banner do controle de Super Nintento" width="100%">
+            </div>
+            <div data-js="banner-home" class="banner-home nintendo-console">
+                <img src="img/Group 36.png" alt="Banner do console Super Ninento" width="100%">
+            </div>
+            <div data-js="banner-home" class="banner-home Computadores">
+                <img src="img/lorenzo-herrera-p0j-mE6mGo4-unsplash 1.png" alt="Banner dos computadores" width="100%">
+            </div>
+            <div class="botoes-banner">
+                <button data-js="banner_button--prev" aria-label="Botão do banner anterior">
+                    < 
+                </button>
+                <button data-js="banner_button--next" aria-label="Botão do próximo banner">
+                    >
+                </button>
+            </div>
         </div>
         <div class="novidades-mania-background">
             <div class="title-novidades">
@@ -64,10 +84,11 @@
             </div>
             <div class="form-novidades">
                 <div class="form-novidades-name">
-                    <input placeholder="Nome" type="text" id="name">
+                    <input placeholder="Nome" type="text" id="name" required>
                 </div>
                 <div class="form-novidades-email">
-                    <input placeholder="E-mail" type="email" id="email" name="email" maxlength="40" required autocomplete>
+                    <input placeholder="E-mail" type="email" id="email" name="email" maxlength="40" required
+                        autocomplete>
                 </div>
                 <div class="form-novidades-button">
                     <input type="button" class="button-novidades" value="Cadastre-se">
@@ -76,10 +97,14 @@
         </div>
         <div class="categorias-de-produtos">
             <div class="produtos-700px">
-                <img id="console3" src="img/controle_ps4_700px.png" alt="Produtos de Consoles" max-width="700px" max-height="236px" width="100%" height="100%">
-                <img id="hardware3" src="img/fan_processador_700px.png" alt="Hardware para Computadores" max-width="700px" max-height="236px" width="100%" height="100%">
-                <img id="perifericos3" src="img/mouse_teclado_700px.png" alt="Periféricos" width="100%" max-width="700px" max-height="236px" height="100%">
-                <img id="pcgamer3" src="img/pc-gamer_700px.png" alt="PPC Gamer" max-width="700px" max-height="236px" width="100%" height="100%">
+                <img id="console3" src="img/controle_ps4_700px.png" alt="Produtos de Consoles" max-width="700px"
+                    max-height="236px" width="100%" height="100%">
+                <img id="hardware3" src="img/fan_processador_700px.png" alt="Hardware para Computadores"
+                    max-width="700px" max-height="236px" width="100%" height="100%">
+                <img id="perifericos3" src="img/mouse_teclado_700px.png" alt="Periféricos" width="100%"
+                    max-width="700px" max-height="236px" height="100%">
+                <img id="pcgamer3" src="img/pc-gamer_700px.png" alt="PPC Gamer" max-width="700px" max-height="236px"
+                    width="100%" height="100%">
             </div>
             <div class="console">
                 <img id="console" src="img\controle_ps4.png" alt="Produtos de Consoles" width="100%" height="100%">
@@ -105,7 +130,7 @@
         <div class="items-footer" style="padding-top: 25px;">
             <div class="coluna-footer-itens inst" id="inst">
                 <label for="coluna-footer-itens">
-                    <h3>Institucional</h3>  
+                    <h3>Institucional</h3>
                 </label>
                 <ul class="coluna-footer-itens-lista" id="inst2">
                     <li>

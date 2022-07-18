@@ -92,3 +92,33 @@ function mostrarItens() {
         document.getElementById("search-box").style.display = 'none'
     }
 }
+
+const slides = document.querySelectorAll('[data-js="banner-home"]')
+const nextButton = document.querySelector('[data-js="banner_button--next"]')
+const prevButton = document.querySelector('[data-js="banner_button--prev"]')
+
+const lastSlideIndex = slides.length - 1
+let currentSlideIndex = 0 
+
+const manipulateSlideClasses = correctSlideIndex => {
+    slides.forEach(slide => slide.classList.remove('bannerVisibility'))
+    slides[currentSlideIndex].classList.add('bannerVisibility')
+}
+
+nextButton.addEventListener('click', () => {
+
+    const correctSlideIndex = currentSlideIndex === lastSlideIndex
+        ? currentSlideIndex = 0
+        : ++currentSlideIndex
+
+    manipulateSlideClasses(correctSlideIndex)
+} )
+
+prevButton.addEventListener('click', () => {
+
+    const correctSlideIndex = currentSlideIndex === 0
+        ? currentSlideIndex = lastSlideIndex
+        : --currentSlideIndex
+
+    manipulateSlideClasses(correctSlideIndex)
+})

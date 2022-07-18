@@ -113,11 +113,38 @@ body{
 .banner-home{
     max-width: 1463px;
     width: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
+.bannerVisibility{
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+.carrosel .botoes-banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.carrosel .botoes-banner button{
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+@keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
 .novidades-mania-background{
     height: 100px;
     max-width: 1463px;
@@ -320,7 +347,7 @@ body{
     #menu{
         max-width: 250px;
         width: 100%;
-        max-height: 200px;
+        max-height: 216px;
         height: 100%;
 
         background-color: #103A8F;
@@ -335,9 +362,18 @@ body{
         align-items: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+        transition: 0.3s ease-in;
     }
-    .menu-ativo{
-        display: flex;
+    #menu a{
+        width: 100%;
+    }
+    .menuMembros{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    #menu a:hover{
+        background-color: rgb(151, 151, 151);
+        color: black;      
     }
     #menu .menuLogin2{
         display: block;
